@@ -17,7 +17,7 @@ attributes or properties?
 
 ## Instructions
 
-Fork and clone this code-along, then run your tests with `learn test` to get an
+Fork and clone this code-along, then run your tests with `bin/rspec` to get an
 overview of what we are trying to do. Follow along to get the tests to pass.
 
 ## What Is a Local Variable?
@@ -107,11 +107,11 @@ lassie.name #=> "Lassie"
 In the code above, we are creating a new `Dog` instance and assigning it a name
 then asking it to return its name.
 
-In your `dog.rb` file add the above code. Run `learn test` again. You should see
+In your `dog.rb` file add the above code. Run `bin/rspec` again. You should see
 output that includes something like this:
 
 ```console
-$ learn test
+bin/rspec
 Failure/Error: this_dogs_name
 
 NameError:
@@ -165,7 +165,7 @@ puts lassie.name
 
 ```
 
-Run `learn test` again; your tests should now be passing. By changing the local
+Run `bin/rspec` again; your tests should now be passing. By changing the local
 variable `this_dogs_name` to an instance variable `@this_dogs_name`, we've
 effectively changed its **scope**: instead of only being available to the method
 it's defined in, it's now available to **all instance methods** defined within
